@@ -1,5 +1,5 @@
 <template>
-  <h1>学习</h1>
+  <h2>学习-证书</h2>
 </template>
 
 <script>
