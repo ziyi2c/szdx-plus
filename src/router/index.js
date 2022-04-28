@@ -3,23 +3,27 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 const routes = [
   {
     path: '/',
+    redirect: '/index'
+  },
+  {
+    path: '/index',
     name: 'Index',
-    component: () => import('@/views/Index/Index.vue')
+    component: () => import('@/views/index/Index.vue')
   },
   {
     path: '/home',
     name: 'Home',
-    component: () => import('@/views/Home/Index.vue')
+    component: () => import('@/views/home/Index.vue')
   },
   {
     path: '/study',
     name: 'Study',
-    component: () => import('@/views/Study/Index.vue')
+    component: () => import('@/views/study/Index.vue')
   },
   {
     path: '/work',
     name: 'Work',
-    component: () => import('@/views/Work/Index.vue')
+    component: () => import('@/views/work/Index.vue')
   },
   {
     path: '/about',
